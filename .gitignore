@@ -1,3 +1,9 @@
 dist/
 *.pyc
 .coverage
+
+**/themes/
+public/
+resources/
+*.lock
+public/
