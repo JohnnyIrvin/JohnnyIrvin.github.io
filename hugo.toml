@@ -1,0 +1,167 @@
+baseURL = "https://www.johnathanirvin.com"
+title = "Johnathan Irvin"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableEmoji = true
+
+[pagination]
+pagerSize = 6
+
+[services]
+[services.disqus]
+# Enable Disqus comments
+# shortname = "yourdiscussshortname"
+
+[markup]
+[markup.highlight]
+noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+author = "Johnathan Irvin"
+# license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
+description = "Software Wizard, Security Researcher, and Manager of Magic"
+keywords = "software,security,research,management,magic"
+info = ["Researcher"]
+avatarURL = "images/avatar.png"
+# gravatar = "me@3xpl0173d.dev"
+dateFormat = "January 2, 2006"
+since = 2020
+
+# Git Commit in Footer, uncomment the line below to enable it
+# commit = "https://github.com/luizdepra/hugo-coder/tree/"
+
+# Right To Left, shift content direction for languages such as Arabic
+rtl = false
+
+# Specify light/dark colorscheme
+# Supported values:
+# "auto" (use preference set by browser)
+# "dark" (dark background, light foreground)
+# "light" (light background, dark foreground) (default)
+colorScheme = "auto"
+
+# Hide the toggle button, along with the associated vertical divider
+hideColorSchemeToggle = false
+
+# Series see also post count
+maxSeeAlsoItems = 5
+
+# Custom CSS
+customCSS = []
+
+# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
+customSCSS = []
+
+# Custom JS
+customJS = []
+
+# Custom remote JS files
+customRemoteJS = []
+
+# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+[params.googleTagManager]
+id = "G-WVDPVNZSYE"
+
+# If you want to implement a Content-Security-Policy, add this section
+# [params.csp]
+# childsrc = ["'self'"]
+# fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
+# formaction = ["'self'"]
+# framesrc = ["'self'", "https://www.youtube.com"]
+# imgsrc = ["'self'"]
+# objectsrc = ["'none'"]
+# stylesrc = [
+#   "'self'",
+#   "'unsafe-inline'",
+#   "https://fonts.googleapis.com/",
+#   "https://cdn.jsdelivr.net/",
+# ]
+# scriptsrc = [
+#   "'self'",
+#   "'unsafe-inline'",
+#   "https://www.google-analytics.com",
+#   "https://cdn.jsdelivr.net/",
+# ]
+# prefetchsrc = ["'self'"]
+# # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
+# connectsrc = ["'self'", "https://www.google-analytics.com"]
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/JohnnyIrvin"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa-brands fa-x-twitter fa-2x"
+weight = 2
+url = "https://x.com/3xplo173d"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 3
+url = "https://www.linkedin.com/in/johnnyirvin/"
+
+# [[params.social]]
+# name = "Medium"
+# icon = "fa-brands fa-medium fa-2x"
+# weight = 4
+# url = "https://medium.com/@johndoe"
+
+[[params.social]]
+name = "RSS"
+icon = "fa-solid fa-rss fa-2x"
+weight = 5
+url = "https://www.johnathanirvin.com/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 1
+url = "about/"
+
+# [[languages.en.menu.main]]
+# name = "Blog"
+# weight = 2
+# url = "posts/"
+
+# [[languages.en.menu.main]]
+# name = "Projects"
+# weight = 3
+# url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Skills"
+weight = 4
+url = "skills/"
+
+[[languages.en.menu.main]]
+name = "Contact"
+weight = 5
+url = "contact/"
+
+[mediaTypes]
+    [mediaTypes.'application/manifest+json']
+    delimiter = "."
+    suffix = "webmanifest"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
