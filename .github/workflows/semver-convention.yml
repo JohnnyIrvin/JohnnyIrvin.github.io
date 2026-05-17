@@ -34,16 +34,36 @@ jobs:
 
     steps:
     - name: Checkout Pull Request
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
-        ref: ${{ github.event.pull_request.head.sha }}
+        ref: ${{ github.event.pull_request.head.sha || github.sha }}
+        fetch-depth: 0
+
+    - name: Determine commit range
+      id: commit-range
+      run: |
+        if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+          range="${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
+        else
+          git fetch origin trunk --depth=1
+          base_sha=$(git merge-base HEAD origin/trunk)
+          if [[ -n "$base_sha" ]]; then
+            range="$base_sha..HEAD"
+          elif git rev-parse HEAD^ >/dev/null 2>&1; then
+            range="HEAD^..HEAD"
+          else
+            range="HEAD"
+          fi
+        fi
+
+        echo "range=$range" >> "$GITHUB_OUTPUT"
 
     - name: Check for SemVer compliance
       run: |
-        for commit in $(git log --pretty=format:"%s" ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}); do
+        while IFS= read -r commit; do
           if ! [[ $commit =~ ^(feat|fix|perf|chore|docs|style|refactor|test|build)(\([^\)]+\))?:[[:space:]].*$ ]]; then
             echo "Invalid commit message format for Semantic Versioning Convention"
             echo "Commit message: $commit"
             exit 1
           fi
-        done
+        done < <(git log --pretty=format:"%s" "${{ steps.commit-range.outputs.range }}")
