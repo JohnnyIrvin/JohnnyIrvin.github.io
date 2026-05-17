@@ -1,0 +1,10 @@
+.git
+.github
+.hugo_build.lock
+dist
+node_modules
+public
+resources
+README.md
+LICENSE
+themes/*/.git
