@@ -1,13 +1,13 @@
 +++
 title = "About"
 description = "Learn more about my journey as a software engineer and vulnerability researcher."
-date = "2025-08-15"
+date = "2026-05-17"
 aliases = ["about-us", "about-me"]
 author = "Johnathan Irvin"
 +++
 
-Ever since I was a young boy, I have had a persistent desire to understand the fundamentals of how things work. This curiosity has led me to pursue a career in software engineering, where I have been able to develop and deploy applications that have been used by millions of people around the world.
+I’ve always had a persistent drive to understand how things work under the hood. Early on, that curiosity naturally led me to a career in software engineering, where I spent years building complex full-stack features, modernizing legacy systems, and leading development teams.
 
-Now instead of taking apart my toys and my mother's appliances (whoops)... I am taking apart software applications and finding vulnerabilities. As a Vulnerability Researcher, the nature of my work is confidential, the goal is to identify potential threats, staying ahead of the curve in the ever-evolving landscape of cybersecurity.
+Eventually, my focus shifted from building software to figuring out how to break it. Today, as a Vulnerability Researcher, I take apart complex applications and systems to uncover their hidden flaws. While the specifics of my work are often confidential, my research focuses on discovering critical security threats and weaponizing those vulnerabilities. The goal is straightforward: demonstrate the true offensive impact of these flaws and stay ahead of the curve in an ever-evolving cybersecurity landscape.
 
-I am continually driven by the prospect of new challenges and the opportunity to collaborate on innovative projects. I look forward to growing, learning, and contributing to a safer digital world.
+Beyond the research, I care deeply about mentoring engineering teams and improving security practices from the ground up. When I’m not digging into a complex security challenge, my time is spent with my family of six. Keeping up with my three boys and one girl is a very different kind of challenge than anything I face at a keyboard, but it keeps me grounded and reminds me why I do the work I do.
