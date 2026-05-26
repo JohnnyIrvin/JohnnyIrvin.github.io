@@ -1,6 +1,7 @@
 +++
 title = "Projects"
 slug = "projects"
+description = "Professional security research projects and open-source contributions focused on vulnerability research and application security."
 date = "2026-05-26"
 +++
 
