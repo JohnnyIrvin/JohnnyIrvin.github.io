@@ -24,9 +24,9 @@ unsafe = true
 [params]
 author = "Johnathan Irvin"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "Software Wizard, Security Researcher, and Manager of Magic"
-keywords = "software,security,research,management,magic"
-info = ["Researcher"]
+description = "Security Researcher & Software Engineering Leader specializing in vulnerability research and application security"
+keywords = "security researcher,vulnerability research,software engineering,application security,exploit development,cybersecurity"
+info = ["Security Researcher", "Software Engineer"]
 avatarURL = "images/avatar.png"
 # gravatar = "me@3xpl0173d.dev"
 dateFormat = "January 2, 2006"
