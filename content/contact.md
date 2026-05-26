@@ -1,6 +1,7 @@
 +++
 title = "Contact"
 slug = "contact"
+description = "Get in touch with Johnathan Irvin. Connect on X, LinkedIn, or GitHub to discuss security research, collaboration opportunities, and professional inquiries."
 date = "2025-08-15"
 +++
 
