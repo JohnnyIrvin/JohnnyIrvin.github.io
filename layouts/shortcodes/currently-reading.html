@@ -74,12 +74,12 @@
         transform: translateX(-50%) scale(1);
       }
     </style>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 20px; margin-top: 2rem; margin-bottom: 2rem;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 20px; margin-top: 2rem; margin-bottom: 2rem;" role="list" aria-label="Recently read books">
     {{ range first 20 $rss.channel.item }}
-      <div class="book-cover-container">
-        <a href="{{ .link }}" class="book-cover-link" target="_blank" rel="noopener noreferrer">
-          <img src="{{ .book_large_image_url }}" alt="{{ .title }}" class="book-cover-img" loading="lazy" referrerpolicy="no-referrer" />
-          <span class="book-title-tooltip">{{ .title }}</span>
+      <div class="book-cover-container" role="listitem">
+        <a href="{{ .link }}" class="book-cover-link" target="_blank" rel="noopener noreferrer" aria-label="View {{ .title }} by {{ .author_name }} on Goodreads">
+          <img src="{{ .book_large_image_url }}" alt="Book cover of {{ .title }} by {{ .author_name }}" class="book-cover-img" loading="lazy" referrerpolicy="no-referrer" />
+          <span class="book-title-tooltip" aria-hidden="true">{{ .title }}</span>
         </a>
       </div>
     {{ end }}
