@@ -1,0 +1,88 @@
+{{ $url := "https://www.goodreads.com/review/list_rss/114802528?shelf=read&per_page=20&sort=date_read" }}
+{{ $req := try (resources.GetRemote $url) }}
+{{ if $req.Err }}
+  <p>Loading books failed.</p>
+{{ else }}
+  {{ with $req.Value }}
+    {{ $rss := . | transform.Unmarshal }}
+    <style>
+      .book-cover-container {
+        position: relative;
+        text-align: center;
+        animation: fadeIn 0.5s ease-in;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .book-cover-link {
+        display: inline-block;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .book-cover-link:hover {
+        transform: translateY(-8px) scale(1.05);
+        z-index: 10;
+      }
+      
+      .book-cover-img {
+        width: 98px;
+        height: 150px;
+        border-radius: 6px;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: box-shadow 0.3s ease;
+      }
+      
+      body.colorscheme-dark .book-cover-img {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      }
+      
+      .book-cover-link:hover .book-cover-img {
+        box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+      }
+      
+      body.colorscheme-dark .book-cover-link:hover .book-cover-img {
+        box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+      }
+      
+      .book-title-tooltip {
+        position: absolute;
+        bottom: -45px;
+        left: 50%;
+        transform: translateX(-50%) scale(0.9);
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        white-space: nowrap;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        z-index: 100;
+      }
+      
+      .book-cover-link:hover .book-title-tooltip {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+      }
+    </style>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 20px; margin-top: 2rem; margin-bottom: 2rem;">
+    {{ range first 20 $rss.channel.item }}
+      <div class="book-cover-container">
+        <a href="{{ .link }}" class="book-cover-link" target="_blank" rel="noopener noreferrer">
+          <img src="{{ .book_large_image_url }}" alt="{{ .title }}" class="book-cover-img" loading="lazy" referrerpolicy="no-referrer" />
+          <span class="book-title-tooltip">{{ .title }}</span>
+        </a>
+      </div>
+    {{ end }}
+    </div>
+  {{ end }}
+{{ end }}
