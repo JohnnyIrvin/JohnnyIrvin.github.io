@@ -1,0 +1,27 @@
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} - {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ with .Site.Params.avatarURL }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} - {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ with .Site.Params.avatarURL }}
+<meta property="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+<meta name="twitter:site" content="@3xplo173d">
+<meta name="twitter:creator" content="@3xplo173d">
+
+<!-- Performance: Preconnect to external domains -->
+<link rel="preconnect" href="https://www.goodreads.com">
+<link rel="preconnect" href="https://i.gr-assets.com">
+
+<!-- Additional SEO -->
+<meta name="author" content="{{ .Site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink }}">
