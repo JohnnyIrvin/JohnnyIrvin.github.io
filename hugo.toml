@@ -142,10 +142,10 @@ url = "about/"
 # weight = 2
 # url = "posts/"
 
-# [[languages.en.menu.main]]
-# name = "Projects"
-# weight = 3
-# url = "projects/"
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 3
+url = "projects/"
 
 [[languages.en.menu.main]]
 name = "Skills"
