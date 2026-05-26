@@ -1,0 +1,35 @@
+.skills-section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .skills-section h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    /* Using a semi-transparent gray adapts automatically to both light and dark modes */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2); 
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skills-grid li {
+    /* Light Mode Defaults */
+    background-color: #edf2f7; 
+    color: #1a202c;
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  /* Hugo Coder Dark Mode Override */
+  body.colorscheme-dark .skills-grid li {
+    background-color: #2d3748;
+    color: #f7fafc;
+  }
