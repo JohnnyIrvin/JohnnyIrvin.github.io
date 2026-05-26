@@ -2,13 +2,17 @@
 
 This is the source code for my personal website, [JohnathanIrvin.com](https://johnathanirvin.com).
 
-The website is a static site using [Picocss](https://picocss.com) and good old HTML.
+The website is a static site built using the [Hugo](https://gohugo.io/) static site generator and the [Hugo Coder](https://github.com/luizdepra/hugo-coder) theme.
 
-## License
+## Local Development
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+If you have Hugo installed locally, you can start the development server to test changes:
 
-Personlly, I do not know what you would want to do with this code, but if you do, feel free to use it.
+```bash
+hugo server -D
+```
+
+Then open `http://localhost:1313` in your browser.
 
 ## Docker
 
@@ -26,7 +30,13 @@ docker run --rm -p 8080:80 johnathanirvin-site
 
 Then open `http://localhost:8080` to test the generated site.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Personally, I do not know what you would want to do with this code, but if you do, feel free to use it.
+
 ## Acknowledgments
 
-* [Picocss](https://picocss.com) for the CSS framework
-* [Randall Williams](https://www.linkedin.com/in/randallwilliamsdeveloper/) for his proofreading and suggestions.
+* [Hugo](https://gohugo.io) for the blazing fast static site generator.
+* [Hugo Coder Theme](https://github.com/luizdepra/hugo-coder) for the minimalist theme.
