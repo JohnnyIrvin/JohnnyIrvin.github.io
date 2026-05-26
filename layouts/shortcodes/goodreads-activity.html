@@ -8,15 +8,20 @@
     <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
     {{ range first 5 $rss.channel.item }}
       {{ $titleText := .title | plainify }}
+      {{ $description := .description }}
       {{ $icon := "📚" }}
+      {{ $iconBg := "rgba(99, 102, 241, 0.1)" }}
       {{ $activityType := "" }}
       {{ $stars := "" }}
+      {{ $author := "" }}
       
       {{ if in $titleText "is currently reading" }}
         {{ $icon = "📖" }}
+        {{ $iconBg = "rgba(59, 130, 246, 0.1)" }}
         {{ $activityType = "Currently Reading" }}
       {{ else if in $titleText "gave" }}
         {{ $icon = "⭐" }}
+        {{ $iconBg = "rgba(245, 158, 11, 0.1)" }}
         {{ $activityType = "Rated" }}
         {{ if in $titleText "gave 5 stars" }}
           {{ $stars = "★★★★★" }}
@@ -30,34 +35,58 @@
           {{ $stars = "★☆☆☆☆" }}
         {{ end }}
       {{ else if in $titleText "added" }}
-        {{ $icon = "✓" }}
-        {{ $activityType = "Added" }}
+        {{ $icon = "✅" }}
+        {{ $iconBg = "rgba(34, 197, 94, 0.1)" }}
+        {{ $activityType = "Finished Reading" }}
+      {{ else if in $titleText "wants to read" }}
+        {{ $icon = "📚" }}
+        {{ $iconBg = "rgba(139, 92, 246, 0.1)" }}
+        {{ $activityType = "Wants to Read" }}
       {{ end }}
       
-      {{ $bookTitle := replaceRE ".*'(.+?)'.*" "$1" $titleText }}
+      {{ $bookTitle := "" }}
+      {{ with $description }}
+        {{ $bookTitle = replaceRE "(?s).*class=\"bookTitle\"[^>]*>([^<]+)<.*" "$1" . }}
+        {{ if eq $bookTitle $description }}
+          {{ $bookTitle = replaceRE ".*[''](.+?)[''].*" "$1" $titleText }}
+        {{ end }}
+      {{ end }}
+      {{ if not $bookTitle }}
+        {{ $bookTitle = replaceRE ".*[''](.+?)[''].*" "$1" $titleText }}
+      {{ end }}
       
-      <div style="padding: 16px; border-radius: 8px; background-color: rgba(128, 128, 128, 0.05); border: 1px solid rgba(128, 128, 128, 0.1); transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='rgba(128, 128, 128, 0.08)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';" onmouseout="this.style.backgroundColor='rgba(128, 128, 128, 0.05)'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-        <div style="display: flex; align-items: flex-start; gap: 12px;">
-          <div style="font-size: 1.5rem; flex-shrink: 0; line-height: 1;">{{ $icon }}</div>
+      {{ with $description }}
+        {{ $author = replaceRE "(?s).*class=\"authorName\"[^>]*>([^<]+)<.*" "$1" . }}
+        {{ if eq $author $description }}
+          {{ $author = "" }}
+        {{ end }}
+      {{ end }}
+      
+      <div style="padding: 18px; border-radius: 10px; background: linear-gradient(135deg, rgba(128, 128, 128, 0.03) 0%, rgba(128, 128, 128, 0.06) 100%); border: 1px solid rgba(128, 128, 128, 0.12); transition: all 0.25s ease; cursor: pointer;" onmouseover="this.style.background='linear-gradient(135deg, rgba(128, 128, 128, 0.06) 0%, rgba(128, 128, 128, 0.09) 100%)'; this.style.transform='translateX(-4px)'; this.style.boxShadow='4px 4px 16px rgba(0,0,0,0.08)'; this.style.borderColor='rgba(128, 128, 128, 0.2)';" onmouseout="this.style.background='linear-gradient(135deg, rgba(128, 128, 128, 0.03) 0%, rgba(128, 128, 128, 0.06) 100%)'; this.style.transform='translateX(0)'; this.style.boxShadow='none'; this.style.borderColor='rgba(128, 128, 128, 0.12)';">
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+          <div style="font-size: 1.4rem; flex-shrink: 0; line-height: 1; padding: 8px; border-radius: 8px; background: {{ $iconBg }}; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">{{ $icon }}</div>
           <div style="flex: 1; min-width: 0;">
-            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.6; margin-bottom: 6px; font-weight: 600;">{{ $activityType }}</div>
-            <div style="font-size: 1rem; font-weight: 600; margin-bottom: 4px; line-height: 1.4;">
-              <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; border-bottom: none;">{{ $bookTitle }}</a>
+            <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.8px; opacity: 0.55; margin-bottom: 8px; font-weight: 700;">{{ $activityType }}</div>
+            <div style="margin-bottom: 6px;">
+              <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; border-bottom: none; font-size: 1.05rem; font-weight: 700; line-height: 1.4; display: inline-block; transition: all 0.2s ease;" onmouseover="this.style.color='#6366f1'; this.style.transform='translateX(2px)';" onmouseout="this.style.color='inherit'; this.style.transform='translateX(0)';">{{ $bookTitle }}</a>
             </div>
-            {{ if $stars }}
-              <div style="font-size: 1.1rem; color: #f59e0b; margin-bottom: 4px; letter-spacing: 2px;">{{ $stars }}</div>
+            {{ if $author }}
+              <div style="font-size: 0.85rem; opacity: 0.65; margin-bottom: 8px; font-style: italic;">by {{ $author }}</div>
             {{ end }}
-            <div style="font-size: 0.8rem; opacity: 0.5; margin-top: 6px;">
+            {{ if $stars }}
+              <div style="font-size: 1.15rem; color: #f59e0b; margin-bottom: 6px; letter-spacing: 3px; text-shadow: 0 1px 2px rgba(245, 158, 11, 0.2);">{{ $stars }}</div>
+            {{ end }}
+            <div style="font-size: 0.75rem; opacity: 0.45; margin-top: 8px; font-weight: 500;">
               {{ $date := .pubDate | time }}
-              {{ $date.Format "January 2, 2006" }}
+              {{ $date.Format "Jan 2, 2006" }}
             </div>
           </div>
         </div>
       </div>
     {{ end }}
     </div>
-    <div style="margin-top: 1.5rem; text-align: right; font-size: 0.85rem; opacity: 0.7;">
-      <a href="https://www.goodreads.com/user/show/114802528-johnathan-irvin" target="_blank" rel="noopener noreferrer">View all activity on Goodreads →</a>
+    <div style="margin-top: 1.5rem; text-align: right; font-size: 0.85rem;">
+      <a href="https://www.goodreads.com/user/show/114802528-johnathan-irvin" target="_blank" rel="noopener noreferrer" style="opacity: 0.7; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='1';" onmouseout="this.style.opacity='0.7';">View all activity on Goodreads →</a>
     </div>
   {{ end }}
 {{ end }}
