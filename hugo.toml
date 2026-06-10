@@ -149,11 +149,6 @@ url = "resume/"
 # url = "projects/"
 
 [[languages.en.menu.main]]
-name = "Skills"
-weight = 2
-url = "skills/"
-
-[[languages.en.menu.main]]
 name = "Contact"
 weight = 3
 url = "contact/"
