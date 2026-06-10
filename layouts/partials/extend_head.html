@@ -25,3 +25,14 @@
 <!-- Additional SEO -->
 <meta name="author" content="{{ .Site.Params.author }}">
 <link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Remove color scheme preference if set to auto -->
+{{ if eq .Site.Params.colorScheme "auto" }}
+<script>
+	try {
+		localStorage.removeItem('colorscheme');
+	} catch (e) {
+		// Ignore storage access failures.
+	}
+</script>
+{{ end }}
