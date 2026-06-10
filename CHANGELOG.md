@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.4.1](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.4.0...v2.4.1) (2026-06-10)
+
+
+### Bug Fixes
+
+* Add skip-github-pull-request option to automatic release workflow ([7adf743](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/7adf743a58adfa255e3e4115201c88e728086196))
+
+
+### Reverts
+
+* Release-please-action skip version pr. ([4eee4ca](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/4eee4ca01b50256791fd565bc1287db62b34ed43))
+
 ## [2.4.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.3.0...v2.4.0) (2026-06-10)
 
 
