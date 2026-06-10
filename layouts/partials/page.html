@@ -1,0 +1,22 @@
+<section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ .Title }}
+        </a>
+      </h1>
+    </header>
+
+    {{ with .File }}
+      {{ if eq .BaseFileName "resume" }}
+        <nav class="resume-toc" aria-label="Table of contents">
+          <h2>Table of Contents</h2>
+          {{ $.TableOfContents }}
+        </nav>
+      {{ end }}
+    {{ end }}
+
+    {{ .Content }}
+  </article>
+</section>
