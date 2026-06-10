@@ -9,57 +9,46 @@ date = "2026-06-10"
 
 Highly-awarded Vulnerability Researcher with a strong background in traditional software engineering, specializing in full-chain zero-day discovery and leveraging Al for advanced fuzzing campaigns. Demonstrated expertise in Python, efficiency, documentation, and workflow optimization. Proven ability to lead and mentor technical teams while maintaining a record as a high-impact individual contributor.
 
-<section id="skills" class="skills-section">
-	<h2>Skills</h2>
-</section>
+## Skills
 
-<section id="core-competencies" class="skills-section">
-	<h2>Core Competencies</h2>
-	<ul class="skills-grid">
-		<li>Exploit Development</li>
-		<li>Vulnerability Research</li>
-		<li>Reverse Engineering</li>
-		<li>Vulnerability Assessment</li>
-		<li>Software Engineering</li>
-	</ul>
-</section>
+### Core Competencies
 
-<section id="languages" class="skills-section">
-	<h2>Languages</h2>
-	<ul class="skills-grid">
-		<li>C</li>
-		<li>C++</li>
-		<li>C#</li>
-		<li>Rust</li>
-		<li>Linux x86 & x64 ASM</li>
-		<li>Python</li>
-		<li>JavaScript</li>
-		<li>TypeScript</li>
-		<li>Lua</li>
-		<li>Java</li>
-		<li>Go Lang</li>
-		<li>SQL</li>
-	</ul>
-</section>
+- Exploit Development
+- Vulnerability Research
+- Reverse Engineering
+- Vulnerability Assessment
+- Software Engineering
 
-<section id="tools-and-frameworks" class="skills-section">
-	<h2>Tools & Frameworks</h2>
-	<ul class="skills-grid">
-		<li>Frida</li>
-		<li>Docker</li>
-		<li>FastAPI</li>
-		<li>Flask</li>
-		<li>Vue</li>
-		<li>React</li>
-		<li>Angular</li>
-		<li>Django</li>
-		<li>Celery</li>
-		<li>RabbitMQ</li>
-		<li>Postgres</li>
-		<li>Nginx</li>
-		<li>Git</li>
-	</ul>
-</section>
+### Languages
+
+- C
+- C++
+- C#
+- Rust
+- Linux x86 & x64 ASM
+- Python
+- JavaScript
+- TypeScript
+- Lua
+- Java
+- Go Lang
+- SQL
+
+### Tools & Frameworks
+
+- Frida
+- Docker
+- FastAPI
+- Flask
+- Vue
+- React
+- Angular
+- Django
+- Celery
+- RabbitMQ
+- Postgres
+- Nginx
+- Git
 
 ## Experience
 
