@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.1](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.7.0...v2.7.1) (2026-06-10)
+
+
+### Bug Fixes
+
+* **theme:** honor browser light/dark preference in auto mode ([a5c5c16](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/a5c5c16e7e213ae65e276a86687691ef84948345))
+
 ## [2.7.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.6.0...v2.7.0) (2026-06-10)
 
 
