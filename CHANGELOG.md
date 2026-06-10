@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.6.0...v2.7.0) (2026-06-10)
+
+
+### Features
+
+* **seo:** add script to remove color scheme preference when set to auto ([521b140](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/521b1407cd7aa10b769aee95d3da6b78edf1a258))
+
 ## [2.6.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.5.0...v2.6.0) (2026-06-10)
 
 
