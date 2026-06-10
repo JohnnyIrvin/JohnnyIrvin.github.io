@@ -43,9 +43,3 @@ Highly-awarded Vulnerability Researcher with a strong background in traditional 
 * Rewrote legacy software allowing the replacement of obsolete operating systems on the manufacturing floor.
 * Wrote web applications for Windows CE 5.5 running on handheld scanners.
 
-## Skills
-
-* **Languages:** Python, JavaScript, TypeScript, SQL, C#, Lua, C++, C, Java, Linux x86-32 ASM, Linux x64 ASM, Rust, HTML, CSS, LESS, SaSS, JSON, XML.
-* **Libraries & Frameworks:** Flask, FastAPI, Vue, Bootstrap, Vuetify, Angular, React, Django, HTMX, Celery, PugJS, ASP.NET, Selenium, P5JS, Monogame.
-* **Tools & Infrastructure:** Docker, Git, VS Code, Frida, PyCharm, Visual Studio, Nano, Vim, RabbitMQ, Postgres, Nginx.
-* **Fundamentals:** REST, OAuth, Ajax, Razor.
