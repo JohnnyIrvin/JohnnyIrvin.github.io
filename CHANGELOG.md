@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.6.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.5.0...v2.6.0) (2026-06-10)
+
+
+### Features
+
+* **home:** merge about page into homepage and preserve legacy about URLs ([4de99bf](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/4de99bf43d664a9e9e988ad5491a3df58c2e3770))
+* **home:** simplify hero by removing duplicate author name line ([b495b4a](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/b495b4a6f479b62fcef5b6883c1803e3ca4deccd))
+* **nav:** remove Contact from navbar and preserve legacy /contact URL ([4a34670](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/4a346704a1df69e1813d15bfa8815575d8c998d2))
+* **nav:** remove Skills from navbar while preserving legacy /skills URL ([1fd9747](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/1fd974730041367378e49a6fafc8ad5914d8b772))
+* **page:** add new page layout with title and table of contents ([e591722](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/e5917225de2b024f45d8a4158adf625b62ae28a6))
+
+
+### Bug Fixes
+
+* **resume:** include skills in TOC while preserving custom skills styling ([1f7763b](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/1f7763bd9f726faab2d180ccdd974124d923846b))
+* Swap "About" and "Resume" menu items for improved navigation ([d407e07](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/d407e0757dce718aadb22a1bb17de4f4effed1ee))
+
 ## [2.5.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.4.0...v2.5.0) (2026-06-10)
 
 
