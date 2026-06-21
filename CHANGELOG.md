@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.7.2](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.7.1...v2.7.2) (2026-06-21)
+
+
+### Bug Fixes
+
+* **goodreads:** display all items in Goodreads activity feed ([dc05b62](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/dc05b62323b89a5aad5c9d058a49b11503f0956c))
+* **goodreads:** enhance star rating logic for Goodreads activity ([69d014f](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/69d014fe725b1393d4c30673f147f24fdde2e9be))
+* **goodreads:** improve activity type detection and star rating extraction logic ([0bc8d36](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/0bc8d363f32b4dc374fd1359be557d532d09b5cd))
+* **readme:** update local development instructions to include cache ignore and minification ([2d176b0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/2d176b03c92922a981325c7dadef002743d82f6a))
+
 ## [2.7.1](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.7.0...v2.7.1) (2026-06-10)
 
 
