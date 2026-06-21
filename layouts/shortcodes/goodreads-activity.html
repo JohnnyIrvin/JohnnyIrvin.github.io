@@ -9,32 +9,34 @@
     {{ range $rss.channel.item }}
       {{ $titleText := .title | plainify }}
       {{ $description := .description }}
-      {{ $icon := "📚" }}
-      {{ $iconBg := "rgba(99, 102, 241, 0.1)" }}
-      {{ $activityType := "" }}
+      
+      {{ $icon := "📝" }}
+      {{ $iconBg := "rgba(156, 163, 175, 0.1)" }}
+      {{ $activityType := "Update" }}
       {{ $stars := "" }}
       {{ $author := "" }}
       
-      {{ if in $titleText "is currently reading" }}
-        {{ $icon = "📖" }}
-        {{ $iconBg = "rgba(59, 130, 246, 0.1)" }}
-        {{ $activityType = "Currently Reading" }}
-      {{ else if or (in $titleText "gave") (in $titleText "rated") }}
+      <!-- 1. Determine Activity Type and Stars from Description and Title -->
+      {{ if in $description "gave" }}
         {{ $icon = "⭐" }}
         {{ $iconBg = "rgba(245, 158, 11, 0.1)" }}
         {{ $activityType = "Rated" }}
-        {{ if or (in $titleText "5 stars") (in $titleText "it was amazing") }}
+        {{ if in $description "gave 5 stars" }}
           {{ $stars = "★★★★★" }}
-        {{ else if or (in $titleText "4 stars") (in $titleText "really liked it") }}
+        {{ else if in $description "gave 4 stars" }}
           {{ $stars = "★★★★☆" }}
-        {{ else if or (in $titleText "3 stars") (in $titleText "liked it") }}
+        {{ else if in $description "gave 3 stars" }}
           {{ $stars = "★★★☆☆" }}
-        {{ else if or (in $titleText "2 stars") (in $titleText "it was ok") }}
+        {{ else if in $description "gave 2 stars" }}
           {{ $stars = "★★☆☆☆" }}
-        {{ else if or (in $titleText "1 star") (in $titleText "did not like it") }}
+        {{ else if in $description "gave 1 star" }}
           {{ $stars = "★☆☆☆☆" }}
         {{ end }}
-      {{ else if in $titleText "added" }}
+      {{ else if in $titleText "is currently reading" }}
+        {{ $icon = "📖" }}
+        {{ $iconBg = "rgba(59, 130, 246, 0.1)" }}
+        {{ $activityType = "Currently Reading" }}
+      {{ else if in $titleText "finished reading" }}
         {{ $icon = "✅" }}
         {{ $iconBg = "rgba(34, 197, 94, 0.1)" }}
         {{ $activityType = "Finished Reading" }}
@@ -42,22 +44,33 @@
         {{ $icon = "📚" }}
         {{ $iconBg = "rgba(139, 92, 246, 0.1)" }}
         {{ $activityType = "Wants to Read" }}
+      {{ else if in $titleText "added" }}
+        {{ $icon = "➕" }}
+        {{ $iconBg = "rgba(107, 114, 128, 0.1)" }}
+        {{ $activityType = "Added to Shelf" }}
       {{ end }}
       
+      <!-- 2. Extract Book Title (Preserving Series Metadata) -->
       {{ $bookTitle := "" }}
       {{ with $description }}
-        {{ $bookTitle = replaceRE "(?s).*class=\"bookTitle\"[^>]*>([^<]+)<.*" "$1" . }}
-        {{ if eq $bookTitle $description }}
-          {{ $bookTitle = replaceRE ".*[''](.+?)[''].*" "$1" $titleText }}
+        <!-- This safely grabs the full string inside the <a class="bookTitle"> tag -->
+        {{ $bookTitle = replaceRE "(?s).*class=\"bookTitle\"[^>]*>\\s*([^<]+)\\s*</a>.*" "$1" . }}
+        {{ if eq $bookTitle . }}
+          {{ $bookTitle = "" }}
         {{ end }}
       {{ end }}
       {{ if not $bookTitle }}
-        {{ $bookTitle = replaceRE ".*[''](.+?)[''].*" "$1" $titleText }}
+        <!-- Fallback if the bookTitle class is missing -->
+        {{ $bookTitle = replaceRE ".*['‘](.+?)['’].*" "$1" $titleText }}
+        {{ if eq $bookTitle $titleText }}
+          {{ $bookTitle = "Unknown Title" }}
+        {{ end }}
       {{ end }}
       
+      <!-- 3. Extract Author -->
       {{ with $description }}
-        {{ $author = replaceRE "(?s).*class=\"authorName\"[^>]*>([^<]+)<.*" "$1" . }}
-        {{ if eq $author $description }}
+        {{ $author = replaceRE "(?s).*class=\"authorName\"[^>]*>\\s*([^<]+)\\s*</a>.*" "$1" . }}
+        {{ if eq $author . }}
           {{ $author = "" }}
         {{ end }}
       {{ end }}
