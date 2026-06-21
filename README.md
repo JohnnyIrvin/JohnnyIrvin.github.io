@@ -9,7 +9,7 @@ The website is a static site built using the [Hugo](https://gohugo.io/) static s
 If you have Hugo installed locally, you can start the development server to test changes:
 
 ```bash
-hugo server -D
+hugo server -D --ignoreCache --minify
 ```
 
 Then open `http://localhost:1313` in your browser.
