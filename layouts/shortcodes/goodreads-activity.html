@@ -19,19 +19,19 @@
         {{ $icon = "📖" }}
         {{ $iconBg = "rgba(59, 130, 246, 0.1)" }}
         {{ $activityType = "Currently Reading" }}
-      {{ else if in $titleText "gave" }}
+      {{ else if or (in $titleText "gave") (in $titleText "rated") }}
         {{ $icon = "⭐" }}
         {{ $iconBg = "rgba(245, 158, 11, 0.1)" }}
         {{ $activityType = "Rated" }}
-        {{ if in $titleText "gave 5 stars" }}
+        {{ if or (in $titleText "5 stars") (in $titleText "it was amazing") }}
           {{ $stars = "★★★★★" }}
-        {{ else if in $titleText "gave 4 stars" }}
+        {{ else if or (in $titleText "4 stars") (in $titleText "really liked it") }}
           {{ $stars = "★★★★☆" }}
-        {{ else if in $titleText "gave 3 stars" }}
+        {{ else if or (in $titleText "3 stars") (in $titleText "liked it") }}
           {{ $stars = "★★★☆☆" }}
-        {{ else if in $titleText "gave 2 stars" }}
+        {{ else if or (in $titleText "2 stars") (in $titleText "it was ok") }}
           {{ $stars = "★★☆☆☆" }}
-        {{ else if in $titleText "gave 1 star" }}
+        {{ else if or (in $titleText "1 star") (in $titleText "did not like it") }}
           {{ $stars = "★☆☆☆☆" }}
         {{ end }}
       {{ else if in $titleText "added" }}
