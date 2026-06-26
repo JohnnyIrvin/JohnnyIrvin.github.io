@@ -6,7 +6,7 @@
   {{ with $req.Value }}
     {{ $rss := . | transform.Unmarshal }}
     <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;" role="feed" aria-label="Latest Goodreads activity">
-    {{ range $rss.channel.item }}
+    {{ range first 5 $rss.channel.item }}
       {{ $titleText := .title | plainify }}
       {{ $description := .description }}
       
