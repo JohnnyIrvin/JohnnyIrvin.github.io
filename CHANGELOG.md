@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.8.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.7.3...v2.8.0) (2026-06-26)
+
+
+### Features
+
+* **activity-feed:** enhance scrollbar styling and add padding for better usability ([229b0a1](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/229b0a1a3aa8c83f3a847d4356a091c8d5250f85))
+
+
+### Bug Fixes
+
+* **goodreads:** limit displayed activities to the first 5 items ([3d06cd2](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/3d06cd228db0d41238d36b7d30f92f65c11b9454))
+
 ## [2.7.3](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.7.2...v2.7.3) (2026-06-21)
 
 
