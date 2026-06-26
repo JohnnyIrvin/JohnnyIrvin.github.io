@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.3](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.7.2...v2.7.3) (2026-06-21)
+
+
+### Bug Fixes
+
+* **workflow:** add --ignoreCache option to Hugo build command ([1643b8e](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/1643b8e18b201ff1cb180cd25eaa58cc052df53e))
+
 ## [2.7.2](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.7.1...v2.7.2) (2026-06-21)
 
 
