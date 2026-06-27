@@ -1,0 +1,25 @@
+.page-toc summary {
+  cursor: pointer;
+  display: list-item;
+  list-style-position: inside;
+  outline: none;
+  user-select: none;
+}
+
+.page-toc summary h2 {
+  display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.page-toc summary:hover h2 {
+  color: #6366f1; 
+  transition: color 0.2s ease;
+}
+
+.page-toc details[open] summary {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  padding-bottom: 0.5rem;
+}
