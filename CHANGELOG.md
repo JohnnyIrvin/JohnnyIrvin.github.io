@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.9.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.8.0...v2.9.0) (2026-06-27)
+
+
+### Features
+
+* **resume:** Table of contents per page determined by file header content. ([940cdd8](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/940cdd81854bb68cabc443cd2c5f56b00db4bb1b))
+* **toc:** implement collapsible table of contents in page layout ([0e566ee](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/0e566ee5b9a88b9dfdf49939a863abf4e633d564))
+
+
+### Bug Fixes
+
+* **toc:** remove default open state from table of contents details ([e998430](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/e99843094d5bcef93eab66654d429c25634a9a32))
+
 ## [2.8.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.7.3...v2.8.0) (2026-06-26)
 
 
