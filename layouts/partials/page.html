@@ -8,13 +8,11 @@
       </h1>
     </header>
 
-    {{ with .File }}
-      {{ if eq .BaseFileName "resume" }}
-        <nav class="resume-toc" aria-label="Table of contents">
-          <h2>Table of Contents</h2>
-          {{ $.TableOfContents }}
-        </nav>
-      {{ end }}
+    {{ if .Params.toc }}
+      <nav class="page-toc" aria-label="Table of contents">
+        <h2>Table of Contents</h2>
+        {{ .TableOfContents }}
+      </nav>
     {{ end }}
 
     {{ .Content }}
