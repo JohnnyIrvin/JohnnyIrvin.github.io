@@ -10,8 +10,16 @@
 
     {{ if .Params.toc }}
       <nav class="page-toc" aria-label="Table of contents">
-        <h2>Table of Contents</h2>
-        {{ .TableOfContents }}
+        <details open>
+          <summary>
+            <h2>
+              Table of Contents
+            </h2>
+          </summary>
+
+          {{ .TableOfContents }}
+
+        </details>
       </nav>
     {{ end }}
 
