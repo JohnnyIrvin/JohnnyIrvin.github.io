@@ -13,11 +13,6 @@
   padding: 0;
 }
 
-.page-toc summary:hover h2 {
-  color: #6366f1; 
-  transition: color 0.2s ease;
-}
-
 .page-toc details[open] summary {
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(128, 128, 128, 0.2);
