@@ -8,7 +8,7 @@ toc = true
 
 ## Summary
 
-Highly-awarded Vulnerability Researcher with a strong background in traditional software engineering, specializing in full-chain zero-day discovery and leveraging Al for advanced fuzzing campaigns. Demonstrated expertise in Python, efficiency, documentation, and workflow optimization. Proven ability to lead and mentor technical teams while maintaining a record as a high-impact individual contributor.
+Highly-awarded Vulnerability Researcher with a strong background in traditional software engineering, specializing in full-chain zero-day discovery and leveraging AI for advanced fuzzing campaigns. Demonstrated expertise in Python, efficiency, documentation, and workflow optimization. Proven ability to lead and mentor technical teams while maintaining a record as a high-impact individual contributor.
 
 ## Skills
 
@@ -83,4 +83,3 @@ Highly-awarded Vulnerability Researcher with a strong background in traditional 
 * Introduced near-real-time tracking of factory machines by integrating with Allen-Bradley PLCS into Time-Series Database displaying on web-based analytical dashboard.
 * Rewrote legacy software allowing the replacement of obsolete operating systems on the manufacturing floor.
 * Wrote web applications for Windows CE 5.5 running on handheld scanners.
-
