@@ -1,12 +1,12 @@
 +++
-title = "Resume"
+title = "Johnathan Irvin  - Resume"
 slug = "resume"
 description = "The professional resume of Johnathan Irvin, Vulnerability Researcher and Software Engineer."
-date = "2026-06-10"
+date = "2026-07-11"
 toc = true
 +++
 
-## Summary
+## Vulnerability Researcher & Software Engineer
 
 Highly-awarded Vulnerability Researcher with a strong background in traditional software engineering, specializing in full-chain zero-day discovery and leveraging AI for advanced fuzzing campaigns. Demonstrated expertise in Python, efficiency, documentation, and workflow optimization. Proven ability to lead and mentor technical teams while maintaining a record as a high-impact individual contributor.
 
