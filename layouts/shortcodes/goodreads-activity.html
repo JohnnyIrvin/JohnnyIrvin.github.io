@@ -5,7 +5,7 @@
 {{ else }}
   {{ with $req.Value }}
     {{ $rss := . | transform.Unmarshal }}
-    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;" role="feed" aria-label="Latest Goodreads activity">
+    <div class="gr-activity-container" role="feed" aria-label="Latest Goodreads activity">
     {{ range first 5 $rss.channel.item }}
       {{ $titleText := .title | plainify }}
       {{ $description := .description }}
@@ -16,7 +16,6 @@
       {{ $stars := "" }}
       {{ $author := "" }}
       
-      <!-- 1. Determine Activity Type and Stars from Description and Title -->
       {{ if in $description "gave" }}
         {{ $icon = "⭐" }}
         {{ $iconBg = "rgba(245, 158, 11, 0.1)" }}
@@ -47,27 +46,31 @@
       {{ else if in $titleText "added" }}
         {{ $icon = "➕" }}
         {{ $iconBg = "rgba(107, 114, 128, 0.1)" }}
-        {{ $activityType = "Added to Shelf" }}
+        
+        {{ if in $titleText "to read" }}
+          {{ $activityType = "Added to 'To Read' Shelf" }}
+        {{ else if in $titleText "read" }}
+          {{ $activityType = "Added to 'Read' Shelf" }}
+        {{ else }}
+          {{ $activityType = "Added to Shelf" }}
+        {{ end }}
+
       {{ end }}
       
-      <!-- 2. Extract Book Title (Preserving Series Metadata) -->
       {{ $bookTitle := "" }}
       {{ with $description }}
-        <!-- This safely grabs the full string inside the <a class="bookTitle"> tag -->
         {{ $bookTitle = replaceRE "(?s).*class=\"bookTitle\"[^>]*>\\s*([^<]+)\\s*</a>.*" "$1" . }}
         {{ if eq $bookTitle . }}
           {{ $bookTitle = "" }}
         {{ end }}
       {{ end }}
       {{ if not $bookTitle }}
-        <!-- Fallback if the bookTitle class is missing -->
         {{ $bookTitle = replaceRE ".*['‘](.+?)['’].*" "$1" $titleText }}
         {{ if eq $bookTitle $titleText }}
           {{ $bookTitle = "Unknown Title" }}
         {{ end }}
       {{ end }}
       
-      <!-- 3. Extract Author -->
       {{ with $description }}
         {{ $author = replaceRE "(?s).*class=\"authorName\"[^>]*>\\s*([^<]+)\\s*</a>.*" "$1" . }}
         {{ if eq $author . }}
@@ -75,21 +78,21 @@
         {{ end }}
       {{ end }}
       
-      <div style="padding: 18px; border-radius: 10px; background: linear-gradient(135deg, rgba(128, 128, 128, 0.03) 0%, rgba(128, 128, 128, 0.06) 100%); border: 1px solid rgba(128, 128, 128, 0.12); transition: all 0.25s ease; cursor: pointer;" onmouseover="this.style.background='linear-gradient(135deg, rgba(128, 128, 128, 0.06) 0%, rgba(128, 128, 128, 0.09) 100%)'; this.style.transform='translateX(-4px)'; this.style.boxShadow='4px 4px 16px rgba(0,0,0,0.08)'; this.style.borderColor='rgba(128, 128, 128, 0.2)';" onmouseout="this.style.background='linear-gradient(135deg, rgba(128, 128, 128, 0.03) 0%, rgba(128, 128, 128, 0.06) 100%)'; this.style.transform='translateX(0)'; this.style.boxShadow='none'; this.style.borderColor='rgba(128, 128, 128, 0.12)';">
-        <div style="display: flex; align-items: flex-start; gap: 14px;">
-          <div style="font-size: 1.4rem; flex-shrink: 0; line-height: 1; padding: 8px; border-radius: 8px; background: {{ $iconBg }}; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">{{ $icon }}</div>
-          <div style="flex: 1; min-width: 0;">
-            <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.8px; opacity: 0.55; margin-bottom: 8px; font-weight: 700;">{{ $activityType }}</div>
-            <div style="margin-bottom: 6px;">
-              <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; border-bottom: none; font-size: 1.05rem; font-weight: 700; line-height: 1.4; display: inline-block; transition: all 0.2s ease;" onmouseover="this.style.color='#6366f1'; this.style.transform='translateX(2px)';" onmouseout="this.style.color='inherit'; this.style.transform='translateX(0)';">{{ $bookTitle }}</a>
+      <div class="gr-activity-card">
+        <div class="gr-activity-layout">
+          <div class="gr-activity-icon" style="background: {{ $iconBg }};">{{ $icon }}</div>
+          <div class="gr-activity-content">
+            <div class="gr-activity-type">{{ $activityType }}</div>
+            <div class="gr-activity-title">
+              <a href="{{ .link }}" target="_blank" rel="noopener noreferrer">{{ $bookTitle }}</a>
             </div>
             {{ if $author }}
-              <div style="font-size: 0.85rem; opacity: 0.65; margin-bottom: 8px; font-style: italic;">by {{ $author }}</div>
+              <div class="gr-activity-author">by {{ $author }}</div>
             {{ end }}
             {{ if $stars }}
-              <div style="font-size: 1.15rem; color: #f59e0b; margin-bottom: 6px; letter-spacing: 3px; text-shadow: 0 1px 2px rgba(245, 158, 11, 0.2);">{{ $stars }}</div>
+              <div class="gr-activity-stars">{{ $stars }}</div>
             {{ end }}
-            <div style="font-size: 0.75rem; opacity: 0.45; margin-top: 8px; font-weight: 500;">
+            <div class="gr-activity-date">
               {{ $date := .pubDate | time }}
               {{ $date.Format "Jan 2, 2006" }}
             </div>
@@ -98,8 +101,8 @@
       </div>
     {{ end }}
     </div>
-    <div style="margin-top: 1.5rem; text-align: right; font-size: 0.85rem;">
-      <a href="https://www.goodreads.com/user/show/114802528-johnathan-irvin" target="_blank" rel="noopener noreferrer" style="opacity: 0.7; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='1';" onmouseout="this.style.opacity='0.7';">View all activity on Goodreads →</a>
+    <div class="gr-activity-footer">
+      <a href="https://www.goodreads.com/user/show/114802528-johnathan-irvin" target="_blank" rel="noopener noreferrer">View all activity on Goodreads →</a>
     </div>
   {{ end }}
 {{ end }}
