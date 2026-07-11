@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.10.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.9.0...v2.10.0) (2026-07-11)
+
+
+### Features
+
+* **activity:** enhance Goodreads activity feed with structured CSS styles ([b5912b5](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/b5912b50d9c6382aa90c06099e73c2e231e431f6))
+* **security:** add Content Security Policy and X-Content-Type-Options meta tags ([daeb016](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/daeb01638f229c7bdb17d76ed921f12f2e53ef7b))
+
+
+### Bug Fixes
+
+* **resume:** correct typo in AI reference in summary section ([0db85c5](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/0db85c57736a348b41226bdc99941576baee2d35))
+* **resume:** remove redundant bullet point to improve clarity in experience section ([01d2dd7](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/01d2dd700747d8c20010cd2b53679aa752629a05))
+* **resume:** update title and date in resume metadata ([e76b479](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/e76b47989daccc2ff0d22257caa86654e8d1f620))
+
 ## [2.9.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.8.0...v2.9.0) (2026-06-27)
 
 
