@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Sitemaps
-Sitemap: https://www.johnathanirvin.com/sitemap.xml
