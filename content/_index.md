@@ -1,6 +1,6 @@
 +++
 title = "Johnathan Irvin"
-aliases = ["/about/", "/about-us/", "/about-me/"]
+aliases = ["/about/", "/about-us/", "/about-me/", "/contact/"]
 +++
 
 I've always had a persistent drive to understand how things work under the hood. Early on, that curiosity naturally led me to a career in software engineering, where I spent years building complex full-stack features, modernizing legacy systems, and leading development teams.
