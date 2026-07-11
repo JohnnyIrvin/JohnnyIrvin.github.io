@@ -81,7 +81,6 @@ Highly-awarded Vulnerability Researcher with a strong background in traditional 
 * Hosted company-wide Cybersecurity Lunch and Learns to raise awareness of our human firewall inefficiencies.
 * Participated in Da Vinci Science Center Future Leaders of America's event showing 100s of students the power of a Raspberry Pi and the importance of computer science.
 * Introduced near-real-time tracking of factory machines by integrating with Allen-Bradley PLCS into Time-Series Database displaying on web-based analytical dashboard.
-* Drastically decreasing incident response-time to issues on the factory floor.
 * Rewrote legacy software allowing the replacement of obsolete operating systems on the manufacturing floor.
 * Wrote web applications for Windows CE 5.5 running on handheld scanners.
 
