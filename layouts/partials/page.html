@@ -1,5 +1,6 @@
 <section class="container page">
   <article>
+    {{ if .Params.TitleOnPage }}
     <header>
       <h1 class="title">
         <a class="title-link" href="{{ .Permalink | safeURL }}">
@@ -7,6 +8,7 @@
         </a>
       </h1>
     </header>
+    {{ end }}
 
     {{ if .Params.toc }}
       <nav class="page-toc" aria-label="Table of contents">
