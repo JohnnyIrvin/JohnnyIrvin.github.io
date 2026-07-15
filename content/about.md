@@ -15,8 +15,14 @@ More importantly, I balance this workload while raising four kids. If there is a
 ## What I'm Reading
 When I am not deep in code, coursework, or family time, I decompress with a lot of reading. I am particularly drawn to progression fantasy and LitRPG-genres focused on problem solving, leveling up, and overcoming impossible odds.
 
-### Currently Reading:
-{{< currently-reading >}}
-
-### Recent Activity:
-{{< goodreads-activity >}}
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 3rem; margin-top: 2rem; align-items: start;">
+  <div>
+    <h3 style="margin-top: 0;">Recently Read</h3>
+    {{< currently-reading >}}
+  </div>
+  
+  <div>
+    <h3 style="margin-top: 0;">Latest Updates</h3>
+    {{< goodreads-activity >}}
+  </div>
+</div>
