@@ -8,7 +8,7 @@ toc = true
 
 ## Vulnerability Researcher & Software Engineer
 
-Highly-awarded Vulnerability Researcher with a strong background in traditional software engineering, specializing in full-chain zero-day discovery and leveraging AI for advanced fuzzing campaigns. Demonstrated expertise in Python, efficiency, documentation, and workflow optimization. Proven ability to lead and mentor technical teams while maintaining a record as a high-impact individual contributor.
+Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the gap between advanced adversarial capability development and enterprise risk mitigation. Combines a strong foundation in full-stack software engineering with expertise in full-chain zero-day discovery. Proven track record of directing cross-functional engineering teams, optimizing CI/CD pipelines, and driving strategic security initiatives from architectural analysis to operational deployment.
 
 ## Skills
 
@@ -56,6 +56,10 @@ Highly-awarded Vulnerability Researcher with a strong background in traditional 
 ### Booz Allen Hamilton 
 **Vulnerability Researcher (Lead Technologist)**
 * Won Booz Allen VIP Award in February 2026. This honor is given to approximately 100 candidates of 35,000 employees a year.
+* Spearheaded the comprehensive engineering of custom adversarial emulation platforms for restricted system architectures, optimizing for consistent execution and stealthy operation across isolated runtimes.
+* Orchestrated the end-to-end vulnerability research and capability engineering lifecycle, converting fundamental architectural analysis into sophisticated, operational proof-of-concept deliverables.
+* Architected sophisticated exploit primitives to circumvent defenses on public-facing interfaces, delivering critical analysis regarding the functional boundaries of contemporary defensive frameworks.
+* Orchestrated intricate adversarial analysis projects within rigorous runtime environments, steering technical methodologies and defining critical objective roadmaps for expert engineering groups.
 
 ### Zimperium
 **Senior Engineer**
