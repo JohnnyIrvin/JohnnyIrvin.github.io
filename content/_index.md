@@ -3,11 +3,11 @@ title = "Johnathan Irvin"
 aliases = ["/about/", "/about-us/", "/about-me/", "/contact/"]
 +++
 
-I've always had a persistent drive to understand how things work under the hood. Early on, that curiosity naturally led me to a career in software engineering, where I spent years building complex full-stack features, modernizing legacy systems, and leading development teams.
+I’ve always been driven by the 'under the hood' complexity of systems. That curiosity defined my early career in software engineering, where I spent years not only building full-stack features and modernizing legacy codebases but also learning how to build high-performing engineering teams.
 
-Eventually, my focus shifted from building software to figuring out how to break it. Today, as a Vulnerability Researcher, I take apart complex applications and systems to uncover their hidden flaws. While the specifics of my work are often confidential, my research focuses on discovering critical security threats and weaponizing those vulnerabilities. The goal is straightforward: demonstrate the true offensive impact of these flaws and stay ahead of the curve in an ever-evolving cybersecurity landscape.
+Eventually, I channeled that foundational engineering expertise into the offensive security space. Today, as a Vulnerability Researcher, I analyze complex architectures to uncover high-impact security flaws. My work focuses on adversarial capability development; identifying critical vulnerabilities, developing sophisticated exploit primitives, and demonstrating the true operational risk they pose to an organization. For me, offensive research isn't just about finding flaws; it’s about providing the strategic insight necessary to build more resilient systems from the ground up.
 
-Beyond the research, I care deeply about mentoring engineering teams and improving security practices from the ground up. When I'm not digging into a complex security challenge, my time is spent with my family of six. Keeping up with my three boys and one girl is a very different kind of challenge than anything I face at a keyboard, but it keeps me grounded and reminds me why I do the work I do.
+Beyond the technical research, I am deeply invested in mentoring and leadership. I’ve found that my background in offensive engineering uniquely qualifies me to help development teams anticipate threats and improve their security posture proactively. When I’m not digging into complex technical challenges, I am focused on my family of six. Keeping up with my three boys and one girl is a different kind of operational challenge, but it keeps me grounded and reminds me why I do the work I do.
 
 ## Reading
 
