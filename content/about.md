@@ -1,0 +1,23 @@
++++
+title = "Johnathan Irvin  - About Me"
+slug = "about"
+description = "Learn more about Johnathan Irvin, Software Engineering Leader and Vulnerability Researcher, and his work in offensive security research and application security."
+date = "2026-07-15"
++++
+
+# About Me
+I am a Vulnerability Researcher with a foundation in software engineering, focused on breaking systems to build them back stronger. But my journey in technology is only part of the story.
+
+## The Hustle
+I am currently managing a demanding, high-velocity schedule. I work full-time in infosec while simultaneously pursuing an accelerated, dual BS/MS degree in Computer Science. Time management, prioritization, and rapid learning aren't just buzzwords for me; they are the required mechanics of my daily life.
+
+More importantly, I balance this workload while raising four kids. If there is a lesson I’ve learned between debugging exploits and managing a busy household, it’s that effective leadership requires patience, clear communication, and the ability to adapt when things don't go according to plan.
+
+## What I'm Reading
+When I am not deep in code, coursework, or family time, I decompress with a lot of reading. I am particularly drawn to progression fantasy and LitRPG-genres focused on problem solving, leveling up, and overcoming impossible odds.
+
+### Currently Reading:
+{{< currently-reading >}}
+
+### Recent Activity:
+{{< goodreads-activity >}}
