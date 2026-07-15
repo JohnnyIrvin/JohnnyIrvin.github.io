@@ -1,5 +1,5 @@
 +++
-title = "Johnathan Irvin  - Resume"
+title = "Resume"
 slug = "resume"
 description = "The professional resume of Johnathan Irvin, Vulnerability Researcher and Software Engineer."
 date = "2026-07-11"
