@@ -1,11 +1,10 @@
 +++
-title = "Johnathan Irvin  - About Me"
+title = "About Me"
 slug = "about"
 description = "Learn more about Johnathan Irvin, Software Engineering Leader and Vulnerability Researcher, and his work in offensive security research and application security."
 date = "2026-07-15"
 +++
 
-# About Me
 I am a Vulnerability Researcher with a foundation in software engineering, focused on breaking systems to build them back stronger. But my journey in technology is only part of the story.
 
 ## The Hustle
