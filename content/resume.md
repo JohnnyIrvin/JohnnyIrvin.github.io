@@ -18,7 +18,7 @@ Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the ga
 
 * Won Booz Allen VIP Award in February 2026. This honor is given to approximately 100 candidates of 35,000 employees a year.
 * Spearheaded the comprehensive engineering of custom adversarial emulation platforms for restricted system architectures, optimizing for consistent execution and stealthy operation across isolated runtimes.
-* Orchestrated the end-to-end vulnerability research and capability engineering lifecycle, converting fundamental architectural analysis into sophisticated, operational proof-of-concept deliverables.
+* Discovered and exploited zero-day vulnerabilities in restricted system architectures, developing operational proof-of-concepts for red team emulation.
 * Architected sophisticated exploit primitives to circumvent defenses on public-facing interfaces, delivering critical analysis regarding the functional boundaries of contemporary defensive frameworks.
 * Orchestrated intricate adversarial analysis projects within rigorous runtime environments, steering technical methodologies and defining critical objective roadmaps for expert engineering groups.
 
