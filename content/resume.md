@@ -55,6 +55,8 @@ Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the ga
 
 ### Booz Allen Hamilton 
 **Vulnerability Researcher (Lead Technologist)**
+<span style="font-size: 0.9rem; color: #666;">June 2023 - Present</span>
+
 * Won Booz Allen VIP Award in February 2026. This honor is given to approximately 100 candidates of 35,000 employees a year.
 * Spearheaded the comprehensive engineering of custom adversarial emulation platforms for restricted system architectures, optimizing for consistent execution and stealthy operation across isolated runtimes.
 * Orchestrated the end-to-end vulnerability research and capability engineering lifecycle, converting fundamental architectural analysis into sophisticated, operational proof-of-concept deliverables.
@@ -63,6 +65,7 @@ Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the ga
 
 ### Zimperium
 **Senior Engineer**
+<span style="font-size: 0.9rem; color: #666;">November 2021 - June 2023</span>
 * Led technical efforts to remediate high-priority customer issues related to Python microservices.
 * Conducted comprehensive security assessments to identify and mitigate vulnerabilities in REST endpoints, database communications, and repositories.
 * Provided expertise in application security to enhance the overall security posture of the company's platform.
@@ -73,6 +76,7 @@ Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the ga
 
 ### Point3 Security
 **Software Architect - Technical Lead**
+<span style="font-size: 0.9rem; color: #666;">April 2019 - October 2021</span>
 * Led a 4-engineer team on a dedicated software development contract for the United States Armed Forces, ensuring strict project delivery and managing billable hours via YouTrack.
 * Co-led a separate 4-person team developing the ESCALATE cybersecurity learning management system, guiding Agile/Kanban workflows and conducting competitive market analysis to drive product strategy.
 * Engineered full-stack features and complex authentication services for a monolithic architecture utilizing Python, VueJS, RESTful APIs, WebSockets, Docker, RabbitMQ, and Flask.
@@ -82,6 +86,7 @@ Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the ga
 
 ### Just Born
 **Application Developer**
+<span style="font-size: 0.9rem; color: #666;">April 2016 - April 2019</span>
 * Hosted company-wide Cybersecurity Lunch and Learns to raise awareness of our human firewall inefficiencies.
 * Participated in Da Vinci Science Center Future Leaders of America's event showing 100s of students the power of a Raspberry Pi and the importance of computer science.
 * Introduced near-real-time tracking of factory machines by integrating with Allen-Bradley PLCS into Time-Series Database displaying on web-based analytical dashboard.
