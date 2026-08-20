@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.11.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.10.0...v2.11.0) (2026-08-20)
+
+
+### Features
+
+* **about:** add About Me section with personal narrative and reading interests ([404b6d0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/404b6d088809158a4c28e72d9f42a5fe6457f4af))
+
+
+### Bug Fixes
+
+* **about:** refine personal narrative for clarity and impact ([2237967](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/2237967bdfcd35ce6a510d099fc3c199634a4e59))
+* **about:** restructure reading section for improved layout and clarity ([ff97aa2](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/ff97aa2515c7e91fbb37648ffd4e9161371c0498))
+* **about:** simplify title for clarity and consistency ([506c129](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/506c12927f0ff8bf78704ee0bce203eb3adc33e7))
+* **introduction:** refine narrative for clarity and impact in personal description ([33cd5d7](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/33cd5d7e6ac27fb8635940b46293861a9f553540))
+* **layouts:** remove unnecessary .gitkeep file ([d2f53e5](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/d2f53e535c46506f300378cd29872f94ac9e5d0d))
+* **metadata:** update description to better reflect expertise in application security and vulnerability research ([1b160fe](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/1b160fe52c24f55ef2e625838b1f7a9b585a4ffd))
+* **page:** conditionally render title based on TitleOnPage parameter ([be141c4](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/be141c45a8bf279d7419a50c03d103e26d0102b1))
+* **projects:** remove projects section from site configuration ([4e5044e](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/4e5044e8a3d330c19284269ef9ab6466b895ebac))
+* **resume:** enhance narrative for clarity and detail in professional experience ([702dd4d](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/702dd4d57fe67ddecb5d76f3b160b6998b67d524))
+* **resume:** reorganize skills section for improved clarity and presentation ([0cfa44a](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/0cfa44a9a2e57cc2af1598cbbda853097ff2506c))
+* **resume:** simplify title for clarity and consistency ([e1d3c8e](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/e1d3c8e029804d054040267e52772033c3639de6))
+* **resume:** update employment dates for clarity and consistency ([ad6b62a](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/ad6b62a32bebf823cd90baa60aa78592abe98123))
+* **resume:** update vulnerability research description for clarity and specificity ([3a59a29](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/3a59a2958a65907b6a3d977127ad80f70fbdd65a))
+
 ## [2.10.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.9.0...v2.10.0) (2026-07-11)
 
 
