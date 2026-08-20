@@ -10,47 +10,6 @@ toc = true
 
 Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the gap between advanced adversarial capability development and enterprise risk mitigation. Combines a strong foundation in full-stack software engineering with expertise in full-chain zero-day discovery. Proven track record of directing cross-functional engineering teams, optimizing CI/CD pipelines, and driving strategic security initiatives from architectural analysis to operational deployment.
 
-## Skills
-
-### Core Competencies
-
-- Exploit Development
-- Vulnerability Research
-- Reverse Engineering
-- Vulnerability Assessment
-- Software Engineering
-
-### Languages
-
-- C
-- C++
-- C#
-- Rust
-- Linux x86 & x64 ASM
-- Python
-- JavaScript
-- TypeScript
-- Lua
-- Java
-- Go Lang
-- SQL
-
-### Tools & Frameworks
-
-- Frida
-- Docker
-- FastAPI
-- Flask
-- Vue
-- React
-- Angular
-- Django
-- Celery
-- RabbitMQ
-- Postgres
-- Nginx
-- Git
-
 ## Experience
 
 ### Booz Allen Hamilton 
@@ -92,3 +51,44 @@ Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the ga
 * Introduced near-real-time tracking of factory machines by integrating with Allen-Bradley PLCS into Time-Series Database displaying on web-based analytical dashboard.
 * Rewrote legacy software allowing the replacement of obsolete operating systems on the manufacturing floor.
 * Wrote web applications for Windows CE 5.5 running on handheld scanners.
+
+## Skills
+
+### Core Competencies
+
+- Exploit Development
+- Vulnerability Research
+- Reverse Engineering
+- Vulnerability Assessment
+- Software Engineering
+
+### Languages
+
+- C
+- C++
+- C#
+- Rust
+- Linux x86 & x64 ASM
+- Python
+- JavaScript
+- TypeScript
+- Lua
+- Java
+- Go Lang
+- SQL
+
+### Tools & Frameworks
+
+- Frida
+- Docker
+- FastAPI
+- Flask
+- Vue
+- React
+- Angular
+- Django
+- Celery
+- RabbitMQ
+- Postgres
+- Nginx
+- Git
