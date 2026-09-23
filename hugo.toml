@@ -25,7 +25,7 @@ unsafe = true
 [params]
 author = "Johnathan Irvin"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "Software Engineering Leader & Security Researcher specializing in scaling application security programs and driving commercial vulnerability research."
+description = "Security engineer and former tech lead specializing in mobile and web application security. Mobile vulnerability researcher at Booz Allen Hamilton."
 keywords = "security researcher,vulnerability research,software engineering,application security,exploit development,cybersecurity"
 info = ["Software Engineering Leader | Security Researcher"]
 avatarURL = "images/avatar.png"
