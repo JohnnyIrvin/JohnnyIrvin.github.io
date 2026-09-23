@@ -1,14 +1,14 @@
 +++
 title = "Resume"
 slug = "resume"
-description = "The professional resume of Johnathan Irvin, Vulnerability Researcher and Software Engineer."
-date = "2026-07-11"
+description = "The professional resume of Johnathan Irvin, security engineer, vulnerability researcher, and former software tech lead."
+date = "2026-09-23"
 toc = true
 +++
 
-## Vulnerability Researcher & Software Engineer
+## Security Engineer & Vulnerability Researcher
 
-Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the gap between advanced adversarial capability development and enterprise risk mitigation. Combines a strong foundation in full-stack software engineering with expertise in full-chain zero-day discovery. Proven track record of directing cross-functional engineering teams, optimizing CI/CD pipelines, and driving strategic security initiatives from architectural analysis to operational deployment.
+Security engineer with ten years of experience on both sides of software: building and re-architecting production platforms as a developer and tech lead, then finding and exploiting zero-day vulnerabilities as a mobile vulnerability researcher. Specializes in mobile and web application security. Brings an attacker's perspective and an engineer's understanding of how products actually ship. Seeking a hands-on role leading security engineering or product security.
 
 ## Experience
 
@@ -16,51 +16,54 @@ Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the ga
 **Vulnerability Researcher (Lead Technologist)**
 <span style="font-size: 0.9rem; color: #666;">June 2023 - Present</span>
 
-* Won Booz Allen VIP Award in February 2026. This honor is given to approximately 100 candidates of 35,000 employees a year.
-* Spearheaded the comprehensive engineering of custom adversarial emulation platforms for restricted system architectures, optimizing for consistent execution and stealthy operation across isolated runtimes.
-* Discovered and exploited zero-day vulnerabilities in restricted system architectures, developing operational proof-of-concepts for red team emulation.
-* Architected sophisticated exploit primitives to circumvent defenses on public-facing interfaces, delivering critical analysis regarding the functional boundaries of contemporary defensive frameworks.
-* Orchestrated intricate adversarial analysis projects within rigorous runtime environments, steering technical methodologies and defining critical objective roadmaps for expert engineering groups.
+* Discover and exploit zero-day vulnerabilities in mobile applications, reverse engineering apps with Jadx and Frida and building proof-of-concept exploits for red team emulation.
+* Engineered custom adversarial emulation platforms for restricted architectures, designed for reliable, low-visibility execution in isolated runtimes.
+* Developed exploit primitives that bypass defenses on public-facing interfaces, and documented where current defensive tools fall short.
+* Shaped technical approach and objectives on multi-researcher projects.
+* Received Booz Allen's VIP Award (February 2026), given to roughly 100 of 35,000 employees each year.
 
 ### Zimperium
-**Senior Engineer**
-<span style="font-size: 0.9rem; color: #666;">November 2021 - June 2023</span>
-* Led technical efforts to remediate high-priority customer issues related to Python microservices.
-* Conducted comprehensive security assessments to identify and mitigate vulnerabilities in REST endpoints, database communications, and repositories.
-* Provided expertise in application security to enhance the overall security posture of the company's platform.
-* Upgraded legacy codebases to modern technologies, improving system performance and security.
-* Managed customer-escalated issues, ensuring timely resolution and customer satisfaction.
-* Reviewed all pull requests for the console to maintain the highest standards of security and code quality.
-* Contributed to the ongoing improvement of code quality and security best practices.
+**Senior Engineer**  
+<span style="font-size: 0.9rem; color: #666;">November 2021 – June 2023</span>
+
+* Senior engineer on the P1 team, resolving the highest-priority customer-facing bugs across the platform's Python services.
+* Owned maintenance and updates for V4, the company's legacy Django codebase, keeping it stable and secure for customers while it was phased out in favor of a fully rewritten product.
+* Maintained FedRAMP compliance by triaging security findings from the CISO's office: validated each with Burp Suite and manual testing, proposed fixes, patched application-level issues directly, and handed off GovCloud infrastructure fixes to the responsible engineers.
+* Reproduced publicly disclosed vulnerabilities (n-days) against the company's SaaS product to determine real exposure and drive fixes.
+* Assessed REST endpoints, database communications, and repositories for vulnerabilities, and reviewed all pull requests for the management console for security and code quality.
+
 
 ### Point3 Security
 **Software Architect - Technical Lead**
 <span style="font-size: 0.9rem; color: #666;">April 2019 - October 2021</span>
-* Led a 4-engineer team on a dedicated software development contract for the United States Armed Forces, ensuring strict project delivery and managing billable hours via YouTrack.
-* Co-led a separate 4-person team developing the ESCALATE cybersecurity learning management system, guiding Agile/Kanban workflows and conducting competitive market analysis to drive product strategy.
-* Engineered full-stack features and complex authentication services for a monolithic architecture utilizing Python, VueJS, RESTful APIs, WebSockets, Docker, RabbitMQ, and Flask.
-* Refined CI/CD pipelines and QA protocols through multi-stage remote deployments, page object models via Selenium, and parallelized testing with pytest and Jest, drastically reducing root cause analysis and rework latency.
-* Created an end-to-end engineering onboarding program and actively mentored developers across the full tech stack, fostering a rapid feedback culture through daily stand-ups and pair programming.
-* Led product strategy by conducting competitive analyses against rival offerings to prioritize and guide feature development.
+ 
+* Led the engineering team on a cyber range for the U.S. Armed Forces integrating ESCALATE, with one full-time and two part-time engineers.
+* Co-led ESCALATE (since discontinued), a cybersecurity training platform, with another senior engineer, guiding 3 junior engineers through Agile/Kanban workflows, code review, and pair programming.
+* Helped design and execute ESCALATE's re-architecture from a static site with a Flask backend into a single-page app built on GraphQL and microservices.
+* Improved CI/CD and QA with multi-stage remote deployments, Selenium page-object tests, and parallelized pytest and Jest suites.
+* Built the engineering onboarding program and ran competitive analysis that shaped ESCALATE's feature priorities.
 
 ### Just Born
 **Application Developer**
 <span style="font-size: 0.9rem; color: #666;">April 2016 - April 2019</span>
-* Hosted company-wide Cybersecurity Lunch and Learns to raise awareness of our human firewall inefficiencies.
-* Participated in Da Vinci Science Center Future Leaders of America's event showing 100s of students the power of a Raspberry Pi and the importance of computer science.
-* Introduced near-real-time tracking of factory machines by integrating with Allen-Bradley PLCS into Time-Series Database displaying on web-based analytical dashboard.
-* Rewrote legacy software allowing the replacement of obsolete operating systems on the manufacturing floor.
-* Wrote web applications for Windows CE 5.5 running on handheld scanners.
+
+* Built near-real-time tracking of factory machines by integrating Allen-Bradley PLCs with a time-series database and a web-based analytics dashboard.
+* Rewrote legacy software so obsolete operating systems on the manufacturing floor could be replaced.
+* Ran company-wide cybersecurity lunch-and-learns on phishing and social engineering awareness.
+* Created a recorded Raspberry Pi explainer and a hands-on demo that let attendees assemble a Pi in a few minutes, presented at a Women in STEM event at the Da Vinci Science Center.
+
+## Education
+
+Western Governors University - Accelerated B.S./M.S. in Computer Science, expected 2029
 
 ## Skills
 
 ### Core Competencies
-
-- Exploit Development
-- Vulnerability Research
-- Reverse Engineering
-- Vulnerability Assessment
-- Software Engineering
+* Web Application Exploitation
+* Mobile Application Reverse Engineering
+* Vulnerability Research & Exploit Development
+* Product & Application Security
+* Software Architecture
 
 ### Languages
 
@@ -79,7 +82,9 @@ Highly-awarded Cybersecurity Leader and Vulnerability Researcher bridging the ga
 
 ### Tools & Frameworks
 
+- Burp Suite
 - Frida
+- Jadx
 - Docker
 - FastAPI
 - Flask
