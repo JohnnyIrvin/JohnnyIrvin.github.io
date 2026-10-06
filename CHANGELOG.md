@@ -1,5 +1,30 @@
 # Changelog
 
+## [2.12.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.11.0...v2.12.0) (2026-10-06)
+
+
+### Features
+
+* **resume:** add custom CSS for resume styling and update resume dates ([659d6f7](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/659d6f7e43635305485834d4786d676ec638dfba))
+* **resume:** update CSS structure and include custom styles for improved layout ([11a5cd8](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/11a5cd8786eecdc7dd4d5b9d7433d1191a96cd49))
+
+
+### Bug Fixes
+
+* **resume:** correct date formatting for Zimperium experience section ([907426a](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/907426ab029382c38500c1dc0cffd32f9053f283))
+* **resume:** correct line breaks for job titles in experience section ([a5ee84e](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/a5ee84edd06187868f6be815975e192173ffc072))
+* **resume:** remove unnecessary line breaks in job titles and adjust CSS for resume date styling ([c0e6f5d](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/c0e6f5d027d508dce72a3cb063e97bf8bb23d6e6))
+* **resume:** streamline experience descriptions for clarity and conciseness ([5d2de00](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/5d2de00a92c78286560c0cb3623a49938bd890dd))
+* **resume:** update introduction. ([7da73b0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/7da73b0153a4eae318e5d5bfa6a7cc2610444041))
+* **resume:** update job responsibilities for Vulnerability Researcher role ([772ffe8](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/772ffe837f815c785615606061c9b264db440f8b))
+* **resume:** update job title ([230fd91](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/230fd9163e5c5961c4c0c6aa415d5baa50ce1242))
+* **resume:** update job title ([95ebd63](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/95ebd63a219b305e656408399009a618226fc46a))
+* **resume:** update job title ([c46338a](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/c46338a40ef930bf71f34579345da36316e688e6))
+* **resume:** update page description ([31aa004](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/31aa004f23be19e67526c8ea75eb0b31edc417e5))
+* **resume:** update resume date to October 6, 2026 ([bbfd358](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/bbfd35836c706e1c19d6a84fe438738f5a884983))
+* **resume:** update summary ([1f67c0f](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/1f67c0fbe7d43c6b1af2b8fab8aa2bb1fb6a7a20))
+* **resume:** update Zimperium bullets ([6401176](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/commit/6401176c8661be61108f964317b75524eb109fac))
+
 ## [2.11.0](https://github.com/JohnnyIrvin/JohnnyIrvin.github.io/compare/v2.10.0...v2.11.0) (2026-09-27)
 
 
