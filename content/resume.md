@@ -16,11 +16,9 @@ I've spent ten years on both sides of software, building and leading as an engin
 **Vulnerability Researcher (Lead Technologist)**
 <span class="resume-date">June 2023 - Present</span>
 
-* Discover and exploit zero-day vulnerabilities in mobile applications, reverse engineering apps with Jadx and Frida and building proof-of-concept exploits for red team emulation.
-* Engineered custom adversarial emulation platforms for restricted architectures, designed for reliable, low-visibility execution in isolated runtimes.
-* Developed exploit primitives that bypass defenses on public-facing interfaces, and documented where current defensive tools fall short.
-* Shaped technical approach and objectives on multi-researcher projects.
-* Received Booz Allen's VIP Award (February 2026), given to roughly 100 of 35,000 employees each year.
+* Owned 50+ vulnerability research and tooling projects end to end.
+* Found and exploited zero-days in web and mobile applications.
+* Received Booz Allen’s VIP Award (February 2026), given to roughly 100 of 35,000 employees each year.
 
 ### Zimperium
 **Senior Engineer**
