@@ -35,20 +35,18 @@ I've spent ten years on both sides of software, building and leading as an engin
 **Software Architect - Technical Lead**
 <span class="resume-date">April 2019 - October 2021</span>
  
-* Led the engineering team on a cyber range for the U.S. Armed Forces integrating ESCALATE, with one full-time and two part-time engineers.
-* Co-led ESCALATE (since discontinued), a cybersecurity training platform, with another senior engineer, guiding 3 junior engineers through Agile/Kanban workflows, code review, and pair programming.
-* Helped design and execute ESCALATE's re-architecture from a static site with a Flask backend into a single-page app built on GraphQL and microservices.
-* Improved CI/CD and QA with multi-stage remote deployments, Selenium page-object tests, and parallelized pytest and Jest suites.
-* Built the engineering onboarding program and ran competitive analysis that shaped ESCALATE's feature priorities.
+* Led engineering on a U.S. Armed Forces cyber range.
+* Co-led a cybersecurity training platform and mentored three junior engineers.
+* Re-architected a Flask monolith into a GraphQL single-page app.
+* Built CI/CD pipelines, parallelized test suites, and the engineering onboarding program.
 
 ### Just Born
 **Application Developer**
 <span class="resume-date">April 2016 - April 2019</span>
 
-* Built near-real-time tracking of factory machines by integrating Allen-Bradley PLCs with a time-series database and a web-based analytics dashboard.
-* Rewrote legacy software so obsolete operating systems on the manufacturing floor could be replaced.
-* Ran company-wide cybersecurity lunch-and-learns on phishing and social engineering awareness.
-* Created a recorded Raspberry Pi explainer and a hands-on demo that let attendees assemble a Pi in a few minutes, presented at a Women in STEM event at the Da Vinci Science Center.
+* Integrated factory PLCs with real-time tracking and analytics dashboards.
+* Replaced legacy software running on obsolete factory-floor systems.
+* Ran company-wide security awareness training on phishing and social engineering.
 
 ## Education
 
