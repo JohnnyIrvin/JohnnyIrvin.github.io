@@ -8,7 +8,7 @@ css = ["css/resume.css"]
 
 ## Software Engineering Leader & Security Researcher
 
-Security engineer with ten years of experience on both sides of software: building and re-architecting production platforms as a developer and tech lead, then finding and exploiting zero-day vulnerabilities as a mobile vulnerability researcher. Specializes in mobile and web application security. Brings an attacker's perspective and an engineer's understanding of how products actually ship. Seeking a hands-on role leading security engineering or product security.
+I specialize in application security. I know how attackers think and how developers work, so I can identify what matters and secure products without slowing teams down.
 
 ## Experience
 
