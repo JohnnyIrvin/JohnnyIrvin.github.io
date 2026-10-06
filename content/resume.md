@@ -13,7 +13,7 @@ Security engineer with ten years of experience on both sides of software: buildi
 ## Experience
 
 ### Booz Allen Hamilton 
-**Vulnerability Researcher (Lead Technologist)**
+**Vulnerability Researcher (Lead Technologist)**\
 <span style="font-size: 0.9rem; color: #666;">June 2023 - Present</span>
 
 * Discover and exploit zero-day vulnerabilities in mobile applications, reverse engineering apps with Jadx and Frida and building proof-of-concept exploits for red team emulation.
@@ -23,7 +23,7 @@ Security engineer with ten years of experience on both sides of software: buildi
 * Received Booz Allen's VIP Award (February 2026), given to roughly 100 of 35,000 employees each year.
 
 ### Zimperium
-**Senior Engineer**  
+**Senior Engineer**\
 <span style="font-size: 0.9rem; color: #666;">November 2021 – June 2023</span>
 
 * Senior engineer on the P1 team, resolving the highest-priority customer-facing bugs across the platform's Python services.
@@ -34,7 +34,7 @@ Security engineer with ten years of experience on both sides of software: buildi
 
 
 ### Point3 Security
-**Software Architect - Technical Lead**
+**Software Architect - Technical Lead**\
 <span style="font-size: 0.9rem; color: #666;">April 2019 - October 2021</span>
  
 * Led the engineering team on a cyber range for the U.S. Armed Forces integrating ESCALATE, with one full-time and two part-time engineers.
@@ -44,7 +44,7 @@ Security engineer with ten years of experience on both sides of software: buildi
 * Built the engineering onboarding program and ran competitive analysis that shaped ESCALATE's feature priorities.
 
 ### Just Born
-**Application Developer**
+**Application Developer**\
 <span style="font-size: 0.9rem; color: #666;">April 2016 - April 2019</span>
 
 * Built near-real-time tracking of factory machines by integrating Allen-Bradley PLCs with a time-series database and a web-based analytics dashboard.
