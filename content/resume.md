@@ -8,7 +8,7 @@ css = ["css/resume.css"]
 
 ## Security Engineering Leader & Security Researcher
 
-I specialize in application security. I know how attackers think and how developers work, so I can identify what matters and secure products without slowing teams down.
+I've spent ten years on both sides of software, building and leading as an engineer and then breaking it as a researcher. I know how attackers think and how developers work, so I can identify what matters and secure products without slowing teams down.
 
 ## Experience
 
