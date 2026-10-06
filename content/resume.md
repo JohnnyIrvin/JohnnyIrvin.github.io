@@ -6,7 +6,7 @@ date = "2026-09-23"
 css = ["css/resume.css"]
 +++
 
-## Security Engineer & Vulnerability Researcher
+## Software Engineering Leader & Security Researcher
 
 Security engineer with ten years of experience on both sides of software: building and re-architecting production platforms as a developer and tech lead, then finding and exploiting zero-day vulnerabilities as a mobile vulnerability researcher. Specializes in mobile and web application security. Brings an attacker's perspective and an engineer's understanding of how products actually ship. Seeking a hands-on role leading security engineering or product security.
 
