@@ -6,6 +6,12 @@ The website is a static site built using the [Hugo](https://gohugo.io/) static s
 
 ## Local Development
 
+Initialize the Hugo Coder theme submodule before building or serving the site:
+
+```bash
+git submodule update --init --recursive
+```
+
 If you have Hugo installed locally, you can start the development server to test changes:
 
 ```bash
