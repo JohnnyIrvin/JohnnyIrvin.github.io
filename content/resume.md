@@ -6,7 +6,7 @@ date = "2026-09-23"
 css = ["css/resume.css"]
 +++
 
-## Software Engineering Leader & Security Researcher
+## Security Engineering Leader & Security Researcher
 
 I specialize in application security. I know how attackers think and how developers work, so I can identify what matters and secure products without slowing teams down.
 
