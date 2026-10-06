@@ -27,7 +27,7 @@ author = "Johnathan Irvin"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Security engineer and former tech lead specializing in mobile and web application security. Mobile vulnerability researcher at Booz Allen Hamilton."
 keywords = "security researcher,vulnerability research,software engineering,application security,exploit development,cybersecurity"
-info = ["Security Engineering Leader | Security Researcher"]
+info = ["Security Engineering Leader | Vulnerability Researcher"]
 avatarURL = "images/avatar.png"
 # gravatar = "me@3xpl0173d.dev"
 dateFormat = "January 2, 2006"
