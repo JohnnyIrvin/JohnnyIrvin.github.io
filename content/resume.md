@@ -24,11 +24,11 @@ I've spent ten years on both sides of software, building and leading as an engin
 **Senior Engineer**
 <span class="resume-date">November 2021 - June 2023</span>
 
-* Senior engineer on the P1 team, resolving the highest-priority customer-facing bugs across the platform's Python services.
-* Owned maintenance and updates for V4, the company's legacy Django codebase, keeping it stable and secure for customers while it was phased out in favor of a fully rewritten product.
-* Maintained FedRAMP compliance by triaging security findings from the CISO's office: validated each with Burp Suite and manual testing, proposed fixes, patched application-level issues directly, and handed off GovCloud infrastructure fixes to the responsible engineers.
-* Reproduced publicly disclosed vulnerabilities (n-days) against the company's SaaS product to determine real exposure and drive fixes.
-* Assessed REST endpoints, database communications, and repositories for vulnerabilities, and reviewed all pull requests for the management console for security and code quality.
+
+* Triaged and patched security findings to maintain FedRAMP compliance.
+* Reproduced n-days against the company's mobile security SaaS platform.
+* Reviewed every management console pull request for security and quality.
+* Kept the legacy Django platform stable and secure through its retirement.
 
 
 ### Point3 Security
