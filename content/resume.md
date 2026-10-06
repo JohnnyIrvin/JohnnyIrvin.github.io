@@ -3,6 +3,7 @@ title = "Resume"
 slug = "resume"
 description = "The professional resume of Johnathan Irvin, security engineer, vulnerability researcher, and former software tech lead."
 date = "2026-09-23"
+css = ["css/resume.css"]
 +++
 
 ## Security Engineer & Vulnerability Researcher
