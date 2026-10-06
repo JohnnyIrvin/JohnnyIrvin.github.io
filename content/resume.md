@@ -3,7 +3,6 @@ title = "Resume"
 slug = "resume"
 description = "The professional resume of Johnathan Irvin, security engineer, vulnerability researcher, and former software tech lead."
 date = "2026-09-23"
-toc = true
 +++
 
 ## Security Engineer & Vulnerability Researcher
@@ -14,7 +13,7 @@ Security engineer with ten years of experience on both sides of software: buildi
 
 ### Booz Allen Hamilton 
 **Vulnerability Researcher (Lead Technologist)**\
-<span style="font-size: 0.9rem; color: #666;">June 2023 - Present</span>
+<span class="resume-date">June 2023 - Present</span>
 
 * Discover and exploit zero-day vulnerabilities in mobile applications, reverse engineering apps with Jadx and Frida and building proof-of-concept exploits for red team emulation.
 * Engineered custom adversarial emulation platforms for restricted architectures, designed for reliable, low-visibility execution in isolated runtimes.
@@ -24,7 +23,7 @@ Security engineer with ten years of experience on both sides of software: buildi
 
 ### Zimperium
 **Senior Engineer**\
-<span style="font-size: 0.9rem; color: #666;">November 2021 – June 2023</span>
+<span class="resume-date">November 2021 – June 2023</span>
 
 * Senior engineer on the P1 team, resolving the highest-priority customer-facing bugs across the platform's Python services.
 * Owned maintenance and updates for V4, the company's legacy Django codebase, keeping it stable and secure for customers while it was phased out in favor of a fully rewritten product.
@@ -35,7 +34,7 @@ Security engineer with ten years of experience on both sides of software: buildi
 
 ### Point3 Security
 **Software Architect - Technical Lead**\
-<span style="font-size: 0.9rem; color: #666;">April 2019 - October 2021</span>
+<span class="resume-date">April 2019 - October 2021</span>
  
 * Led the engineering team on a cyber range for the U.S. Armed Forces integrating ESCALATE, with one full-time and two part-time engineers.
 * Co-led ESCALATE (since discontinued), a cybersecurity training platform, with another senior engineer, guiding 3 junior engineers through Agile/Kanban workflows, code review, and pair programming.
@@ -45,7 +44,7 @@ Security engineer with ten years of experience on both sides of software: buildi
 
 ### Just Born
 **Application Developer**\
-<span style="font-size: 0.9rem; color: #666;">April 2016 - April 2019</span>
+<span class="resume-date">April 2016 - April 2019</span>
 
 * Built near-real-time tracking of factory machines by integrating Allen-Bradley PLCs with a time-series database and a web-based analytics dashboard.
 * Rewrote legacy software so obsolete operating systems on the manufacturing floor could be replaced.
@@ -54,7 +53,8 @@ Security engineer with ten years of experience on both sides of software: buildi
 
 ## Education
 
-Western Governors University - Accelerated B.S./M.S. in Computer Science, expected 2029
+**Western Governors University**\
+Accelerated B.S./M.S. in Computer Science; expected 2029
 
 ## Skills
 

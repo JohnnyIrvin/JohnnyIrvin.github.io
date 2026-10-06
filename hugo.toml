@@ -54,6 +54,7 @@ maxSeeAlsoItems = 5
 
 # Custom CSS
 customCSS = [
+  "css/resume.css",
   "css/skills.css",
   "css/page-toc.css"
 ]
