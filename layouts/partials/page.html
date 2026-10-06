@@ -10,21 +10,6 @@
     </header>
     {{ end }}
 
-    {{ if .Params.toc }}
-      <nav class="page-toc" aria-label="Table of contents">
-        <details>
-          <summary>
-            <h2>
-              Table of Contents
-            </h2>
-          </summary>
-
-          {{ .TableOfContents }}
-
-        </details>
-      </nav>
-    {{ end }}
-
     {{ .Content }}
   </article>
 </section>

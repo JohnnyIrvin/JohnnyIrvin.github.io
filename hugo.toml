@@ -55,8 +55,7 @@ maxSeeAlsoItems = 5
 # Custom CSS
 customCSS = [
   "css/resume.css",
-  "css/skills.css",
-  "css/page-toc.css"
+  "css/skills.css"
 ]
 
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
